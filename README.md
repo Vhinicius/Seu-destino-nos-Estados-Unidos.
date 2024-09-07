@@ -1,4 +1,4 @@
-# Sua Aventura Americana Começa Aqui! 🇺🇸
+# Sua Aventura Americana Começa Aqui! Imersão Dev com Google Gemini
 
 ## O que é essa aplicação?
 
