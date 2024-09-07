@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu destino nos Estados Unidos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Adicionado Font Awesome -->
+</head>
+<body>
+    <header>
+        <h1>Seu destino nos Estados Unidos</h1>
+    </header>
+
+    <main>
+        <!-- Seção de busca -->
+        <section>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Digite seu destino">
+                <button type="button" id="search-button">Buscar</button>
+            </form>
+            <div class="button-container">
+                <a href="https://www.booking.com/flights/index.pt-br.html?aid=304142&label=gen173bo-1DCAEoggI46AdILVgDaCCIAQGYAS24ARfIAQzYAQPoAQH4AQOIAgGYAgKoAgO4Atz97bYGwAIB0gIkNzU1YWE1MjAtM2FiZi00YTAzLThiN2ItZWZlNDUyODk2NDhh2AIE4AIB" target="_blank">
+                    <button type="button" id="reserve-button">
+                        <i class="fas fa-plane"></i> Reserve sua passagem
+                    </button>
+                </a>
+                <a href="https://www.booking.com/index.pt-br.html?label=gen173bo-1FCAEoggI46AdILVgDaCCIAQGYAS24ARfIAQzYAQHoAQH4AQOIAgGYAgKoAgO4Atz97bYGwAIB0gIkNzU1YWE1MjAtM2FiZi00YTAzLThiN2ItZWZlNDUyODk2NDhh2AIF4AIB&aid=304142&selected_currency=BRL&sid=9a82f9103ccce12fa11fe4e7d3fa53eb" target="_blank">
+                    <button type="button" id="reserve-hotel-button">
+                        <i class="fas fa-hotel"></i> Reserve sua hospedagem
+                    </button>
+                </a>
+                <a href="https://www.booking.com/cars/index.pt-br.html?label=gen173bo-1FCAEoggI46AdILVgDaCCIAQGYAS24ARfIAQzYAQHoAQH4AQOIAgGYAgKoAgO4Atz97bYGwAIB0gIkNzU1YWE1MjAtM2FiZi00YTAzLThiN2ItZWZlNDUyODk2NDhh2AIF4AIB&sid=9a82f9103ccce12fa11fe4e7d3fa53eb&aid=304142&adplat=cross_product_bar&selected_currency=BRL" target="_blank">
+                    <button type="button" id="rent-car-button">
+                        <i class="fas fa-car"></i> Alugue seu veículo
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de resultados em formato de grade -->
+        <div class="container">
+            <div class="item">
+                <img src="imagens/Nova-York.jpg" alt="Nova York" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link">Nova York, Nova York</a></h2>
+                    <p>Conhecida por sua vibrante vida urbana, a cidade abriga a Estátua da Liberdade, Central Park, Broadway e Times Square. Para os amantes de filmes e séries, você pode visitar o famoso café da série F.R.I.E.N.D.S.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Nova_Iorque" target="_blank">Conheça mais sobre</a>
+                </div>
+                <div class="sub-menu">
+                    <h3>Pontos turísticos:</h3>
+                    <ul>
+                        <li><a href="https://www.cityexperiences.com/pt/new-york/city-cruises/statue/" target="_blank">Estátua da Liberdade</a></li>
+                        <li><a href="https://www.novayork.net/central-park" target="_blank">Central Park</a></li>
+                        <li><a href="https://www.novayork.net/times-square" target="_blank">Times Square</a></li>
+                        <li><a href="https://www.novayork.net/Broadway" target="_blank">Broadway</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagens/Los-Angeles.jpg" alt="Los Angeles" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="los-angeles">Los Angeles, Califórnia</a></h2>
+                    <p>Los Angeles é conhecida por Hollywood, o centro da indústria de cinema e televisão. É também uma cidade de belas praias e uma cultura diversa e vibrante.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Los_Angeles" target="_blank">Conheça mais sobre</a>
+                    <div id="los-angeles" class="sub-menu">
+                        <ul>
+                            <li><a href="https://www.tudosobrelosangeles.com/calcada-fama" target="_blank">Calçada da Fama</a></li>
+                            <li><a href="https://www.tudosobrelosangeles.com/observatorio-griffith" target="_blank">Observatório Griffith</a></li>
+                            <li><a href="https://www.tudosobrelosangeles.com/pier-santa-monica" target="_blank">Pier Santa Monica</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Chicago.jpg" alt="Chicago" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="chicago">Chicago, Illinois</a></h2>
+                    <p>Famosa pela arquitetura ousada e pelo horizonte urbano às margens do Lago Michigan, Chicago é também um importante centro cultural e econômico.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Chicago" target="_blank">Conheça mais sobre</a>
+                    <div id="chicago" class="sub-menu">
+                        <ul>
+                            <li><a href="https://dicasdechicago.com.br/pontos-turisticos/millennium-park-em-chicago/" target="_blank">Millennium Park</a></li>
+                            <li><a href="https://theskydeck.com/" target="_blank">Skydeck Chicago</a></li>
+                            <li><a href="https://www.artic.edu/" target="_blank">Museu de Arte de Chicago</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Miami.jpg" alt="Miami" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="miami">Miami, Flórida</a></h2>
+                    <p>Miami é um destino conhecido por suas praias, vida noturna e a influência da cultura latina. É uma das cidades mais visitadas dos Estados Unidos.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Miami" target="_blank">Conheça mais sobre</a>
+                    <div id="miami" class="sub-menu">
+                        <ul>
+                            <li><a href="https://www.miamiandbeaches.world/bairros/south-beach" target="_blank">South Beach</a></li>
+                            <li><a href="https://www.dicasdemiami.com/ocean-drive" target="_blank">Ocean Drive</a></li>
+                            <li><a href="https://thewynwoodwalls.com/" target="_blank">Wynwood Walls</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/São-Franscisco.jpg" alt="São Francisco" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="sao-francisco">São Francisco, Califórnia</a></h2>
+                    <p>Famosa pela Golden Gate Bridge, bondes históricos e o bairro de Fisherman’s Wharf, São Francisco é uma cidade costeira cheia de atrações culturais e naturais.</p>
+                    <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Francisco_(Calif%C3%B3rnia)" target="_blank">Conheça mais sobre</a>
+                    <div id="sao-francisco" class="sub-menu">
+                        <ul>
+                            <li><a href="https://www.saofrancisco.net/golden-gate" target="_blank">Ponte Golden Gate</a></li>
+                            <li><a href="https://www.saofrancisco.net/alcatraz" target="_blank">Ilha de Alcatraz</a></li>
+                            <li><a href="https://www.saofrancisco.net/union-square" target="_blank">Union Square</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Las-vegas.jpg" alt="Las Vegas" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="las-vegas">Las Vegas, Nevada</a></h2>
+                    <p>Popular por seus cassinos e vida noturna exuberante, Las Vegas oferece também espetáculos de entretenimento e gastronomia de renome mundial.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Las_Vegas" target="_blank">Conheça mais sobre</a>
+                    <div id="las-vegas" class="sub-menu">
+                        <ul>
+                            <li><a href="https://www.tudosobrelasvegas.com/strip" target="_blank">The Strip</a></li>
+                            <li><a href="https://www.tudosobrelasvegas.com/fontes-bellagio" target="_blank">Fontes do Bellagio</a></li>
+                            <li><a href="https://www.cirquedusoleil.com/las-vegas-shows" target="_blank">Cirque du Soleil</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Grand-Canyon_.jpg" alt="Grand Canyon" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="grand-canyon">Grand Canyon</a></h2>
+                    <p>Uma das maravilhas naturais mais impressionantes do mundo, o Grand Canyon oferece paisagens espetaculares e trilhas para os amantes da natureza e aventura.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Grand_Canyon" target="_blank">Conheça mais sobre</a>
+                    <div id="grand-canyon" class="sub-menu">
+                        <ul>
+                            <li><a href="https://grandcanyonwest.com/tickets/" target="_blank">Skywalk</a></li>
+                            <li><a href="https://www.grandcanyonlodges.com/historic-village/" target="_blank">Grand Canyon Village</a></li>
+                            <li><a href="https://www.nps.gov/places/000/bright-angel-trail.htm" target="_blank">Bright Angel Trail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Nova-Orleans.jpg" alt="Nova Orleans" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="nova-orleans">Nova Orleans, Louisiana</a></h2>
+                    <p>Famosa pelo jazz, a culinária cajun e o Carnaval de Mardi Gras, Nova Orleans oferece uma rica mistura cultural e arquitetônica.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Nova_Orle%C3%A3es" target="_blank">Conheça mais sobre</a>
+                    <div id="nova-orleans" class="sub-menu">
+                        <ul>
+                            <li><a href="https://shop.cafedumonde.com/" target="_blank">Café du Monde</a></li>
+                            <li><a href="https://www.stlouiscathedral.org/" target="_blank">Catedral de St. Louis </a></li>
+                            <li><a href="https://mardigrasworld.com/" target="_blank">Mardi Gras</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Orlando.jpg" alt="Orlando" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="orlando">Orlando, Flórida</a></h2>
+                    <p>Um dos destinos mais procurados por famílias, Orlando abriga os famosos parques temáticos da Disney, Universal Studios e SeaWorld.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Orlando_(Fl%C3%B3rida)" target="_blank">Conheça mais sobre</a>
+                    <div id="orlando" class="sub-menu">
+                        <ul>
+                            <li><a href="https://disneyworld.disney.go.com/pt-br/admission/tickets/" target="_blank">Magic Kingdom</a></li>
+                            <li><a href="https://www.universalorlando.com/web/pt/br/ingressos-para-os-parques" target="_blank">Universal Studios</a></li>
+                            <li><a href="https://seaworld.com/orlando/limited-time-offers/?utm_source=google_knowledgePanel&utm_medium=organic&utm_campaign=gbp_listing/" target="_blank">SeaWorld</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Washington-DC.jpg" alt="Washington, D.C." class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="washington-dc">Washington, D.C.</a></h2>
+                    <p>A capital dos EUA é repleta de monumentos históricos e museus, incluindo o Capitólio, a Casa Branca e o Museu Nacional de História Natural.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Washington,_D.C." target="_blank">Conheça mais sobre</a>
+                    <div id="washington-dc" class="sub-menu">
+                        <ul>
+                            <li><a href="https://americanhistory.si.edu/visit" target="_blank">Museu de História Americana</a></li>
+                            <li><a href="https://www.nps.gov/wamo/planyourvisit/fees.htm#walkup" target="_blank">Monumento a Washington</a></li>
+                            <li><a href="https://www.usbg.gov/visit" target="_blank">Jardim Botânico dos EUA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/San-Diego.jpg" alt="San Diego" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="san-diego">San Diego, Califórnia</a></h2>
+                    <p>Conhecida por seu clima ameno, praias e o famoso Zoológico de San Diego, a cidade oferece uma combinação perfeita de atrações ao ar livre e culturais.</p>
+                    <a href="https://pt.wikipedia.org/wiki/San_Diego" target="_blank">Conheça mais sobre</a>
+                    <div id="san-diego" class="sub-menu">
+                        <ul>
+                            <li><a href="https://zoo.sandiegozoo.org/tickets" target="_blank">Zoológico de San Diego</a></li>
+                            <li><a href="https://balboapark.org/plan-your-visit/" target="_blank">Balboa Park</a></li>
+                            <li><a href="https://tickets.midway.org/webstore/shop/ViewItems.aspx?CG=TicketingDated&C=GenAdm" target="_blank">USS Midway Museum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <img src="imagens/Philadelphia.jpg" alt="Filadélfia" class="thumbnail">
+                <div class="text-content">
+                    <h2><a href="#" class="item-link" data-target="filadelfia">Filadélfia, Pensilvânia</a></h2>
+                    <p>Histórica por ser o local da assinatura da Declaração de Independência, Filadélfia é rica em patrimônio e possui o icônico Sino da Liberdade.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Filad%C3%A9lfia" target="_blank">Conheça mais sobre</a>
+                    <div id="filadelfia" class="sub-menu">
+                        <ul>
+                            <li><a href="https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm" target="_blank">Sino da Liberdade</a></li>
+                            <li><a href="https://www.visitphilly.com/things-to-do/attractions/independence-hall/" target="_blank">Independence Hall</a></li>
+                            <li><a href="https://www.philamuseum.org/visit/admission" target="_blank">Museu de Arte da Filadélfia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>2024 - Seu destino nos Estados Unidos. Todos os direitos reservados</p>
+        <p>Contado: vhinicius12@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
